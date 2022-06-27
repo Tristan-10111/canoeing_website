@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Sintony&display=swap');
+
+$left-sideBar-width:15em;
+
+.LeftSideBar-LeftSection{
+    width: $left-sideBar-width;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6 );
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+
+    .LeftSideBar-LeftSection-topWrapper{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 10px;
+    }
+
+
+
+    .LeftSideBar-LeftSection-menuWrapper{
+        list-style: none;
+        margin: 1rem;
+        padding: 0;
+        
+    }
+
+    .LeftSideBar-LeftSection-menuWrapper li{
+        margin-bottom: 1rem;
+        // margin-left: 1rem;
+    }
+
+    .LeftSideBar-LeftSection-menuWrapper a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 4rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 8px 0px 8px 16px;
+        text-transform: uppercase;
+        font-family: 'Comfortaa', cursive;
+        
+    }
+
+    .LeftSideBar-LeftSection-menuWrapper li a:hover{
+        background-color: #1a83ff;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+
+}
+
+.LeftSideBar-LeftSection--show{
+    transform: translateX(0);
+}
+.LeftSideBar-LeftSection--hide{
+    transform: translateX(-$left-sideBar-width);
+}

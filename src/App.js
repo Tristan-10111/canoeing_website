@@ -1,22 +1,14 @@
+import React from 'react';
 import './App.css';
-import { useState, useEffect } from 'react';
+import Home from './components/home.jsx'
 
 
-const App = () =>{
-    const [counter, preCounter] = useState(0);
-
-    useEffect(() => {
-        preCounter(100);
-    });
-    
-
-    return(
-        <div className='app'>
-            <button onClick={()=> preCounter((prevCounter) => prevCounter -1)}>-</button>
-            <h1>{counter}</h1>
-            <button onClick={() => preCounter((prevCounter) => prevCounter + 1)}></button>
-
-        </div>
-    )
+function App() {
+  return (
+    <>
+   <Home />
+    </>
+  )
 }
-export default App;
+
+export default App
